@@ -107,24 +107,40 @@ formats, temporal and spatial scales, and uncertainty quantification across sens
 
 
 
-References
+References:
+
 [1] D. Sharp, “What are the Different GNSS Correction Methods? | Swiftnav.” [Online]. Available: https://www.swiftnav.com/resource/blog/what-are-the-different-gnss-correction-methods
+
 [2] C. Zang, “Differences between RTK and PPP.” [Online]. Available: https://tersus-gnss.com/tech_blog/-Differences-between-RTK-and-PPP
+
 [3] J. Hu, P. Li, and S. Bisnath, “Towards GNSS ambiguity resolution for smartphones in realistic environments: Characterization of smartphone ambiguities with RTK, PPP, and PPP-RTK,” in Proceedings of the 36th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GNSS+ 2023), 2023, pp. 2698–2711. [Online]. Available: https://www.ion.org/publications/abstract.cfm?articleID=19285
+
 [4] P. Hou, J. Zha, T. Liu, and B. Zhang, “Recent advances and perspectives in GNSS PPP-RTK,” Measurement Science and Technology, vol. 34, no. 5, p. 051002, May 2023. [Online]. Available: https://iopscience.iop.org/article/10.1088/1361-6501/acb78c
+
 [5] P. Felts, “Network RTK vs PPP-RTK: An insight into real-world performance,” Feb. 2024. [Online]. Available: https://www.u-blox.com/en/blogs/tech/network-rtk-vs-ppp-rtk
+
 [6] R. G. Brown, G. Y. Chin, and J. H. Kraemer, “RAIM: Will It Meet the RTCA GPS Minimum Operational Performance Standards?” in Proceedings of the 1991 National Technical Meeting of The Institute of Navigation, 1991, pp. 103–111. [Online]. Available: https://www.ion.org/publications/abstract.cfm?articleID=5020
+
 [7] A. El-Mowafy, K. Wang, and A. Allahvirdizadeh, “LEO aiding GNSS positioning in challenging environments,” XXVII FIG Congress, 2022.
+
 [8] A. El-Mowafy, K. Wang, Y. Li, and A. Allahvirdi-Zadeh, “THE IMPACT OF ORBITAL AND CLOCK ERRORS ON POSITIONING FROM LEO CONSTELLATIONS AND PROPOSED ORBITAL SOLUTIONS,” The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, vol. XLVIII-1/W2-2023, pp. 1111–1117, Dec. 2023. [Online]. Available: https://isprs-archives.copernicus.org/articles/XLVIII-1-W2-2023/1111/2023/
+
 [9] FLORIAN. KUNZI, BENJAMIN. BRAUN, MARKUS. MARKGRAF, and OLIVER. MONTENBRUCK, “First Steps Toward a Fully Operational LEO PNT Payload - Inside GNSS - Global Navigation Satellite Systems Engineering, Policy, and Design,” 2024. [Online]. Available: https://insidegnss.com/ first-steps-toward-a-fully-operational-leo-pnt-payload/
+
 [10] A. El-Mowafy, K. Wang, and A. Allahvirdizadeh, “The potential of LEO mega-constellations in aiding GNSS to enable positioning in challenging environments,” XXVII FIG Congress, 2022.
+
 [11] Y. Yang, Y. Mao, X. Ren, X. Jia, and B. Sun, “Demand and key technology for a LEO constellation as augmentation of satellite navigation systems,” Satellite Navigation, vol. 5, no. 1, p. 11, Apr. 2024. [Online]. Available: https://doi.org/10.1186/s43020-024-00133-w
+
 [12] G. Resources, “What is GNSS Reflectometry? How Does GNSS Reflectometry Work? Understanding Its Principles and Applications - GIS Resources,” 2024. [Online]. Available: https://gisresources.com/
 what-is-gnss-reflectometry-how-does-gnss-reflectometry-workunderstanding-its-principles-and-applications/
+
 [13] “GNSS Reflectometry.” [Online]. Available: https://ggos.org/item/gnss-reflectometry/
+
 [14] “New GNSS reflectometry system revolutionizes environmental remote sensing,” 2025. [Online]. Available: https://www.oulu.fi/en/news/new-gnss-reflectometry-system-revolutionizes-environmental-remote-sensing
+
 [15] S. Jin, A. Camps, Y. Jia, F. Wang, M. Martin-Neira, F. Huang, Q. Yan, S. Zhang, Z. Li, K. Edokossi, D. Yang, Z. Xiao, Z. Ma, and W. Bai, “Remote sensing and its applications using GNSS reflected
 signals: Advances and prospects,” Satellite Navigation, vol. 5, no. 1, p. 19, Dec. 2024. [Online]. Available: https://satellite-navigation.springeropen.com/articles/10.1186/s43020-024-00139-4
+
 [16] T. A. Johansen, “GNSS-R: Maritime Surveillance using GNSS-Reflectometry - NTNU,” 2025. [Online]. Available: https://www.ntnu.edu/smallsat/gnss-r-maritime-surveillance-using-gnss-reflectometry
 
 
