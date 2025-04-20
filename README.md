@@ -15,8 +15,8 @@ GNSS techniques for smartphone navigation, including Differential GNSS (DGNSS), 
 ![image](https://github.com/user-attachments/assets/1d168a64-1a33-4e84-9824-1b8c06967c45)
 
 ### (III) Supported Coverage
-1. DGNSS: Local (￿50 km from base station).
-2. RTK: Regional (￿50 km from base/CORS network).
+1. DGNSS: Local (50 km from base station).
+2. RTK: Regional (50 km from base/CORS network).
 3. PPP: Global (relies on satellite-broadcast corrections).
 4. PPP-RTK: Regional (requires dense CORS network for atmospheric grids).
 
@@ -42,7 +42,30 @@ Finally, Table 2 briefly summarizes the properties of the four GNSS techniques f
 
 
 ## Task 2
-The given skymask dataset is the relationship between the azimuth angle (AZi (i ∈ (1, 2, . . . , 360))) and the corresponding lowest elevation angle (ELi (i ∈ (1, 2, . . . , 360))) that enables Line-of-Sight (LOS) visibility. In the Ordinary Least-squares (OLS) positioning, each received satellite signal can be first determined with a certain azimuth angle AZk (k ∈ (1, 2, . . . , 360)), then if elevation angle given by the received satellite is lower than ELk, we may assume it is not LOS observation and filter out this bad-quality measurement. At one epoch, after this skymask-filtering, if the available number of satellites is smaller than 4, we abort the positioning for this epoch. The above work procedures can be summarized in the flowchart in 1. As for the urban dataset with 839 epochs in total, the 2D positioning results of OLS with skymask and without skymask are summarized in Figure 2. It can be shown that the positioning precision is significantly improved because
+The given skymask dataset is the relationship between the azimuth angle (AZi (i ∈ (1, 2, . . . , 360))) and the corresponding lowest elevation angle (ELi (i ∈ (1, 2, . . . , 360))) that enables Line-of-Sight (LOS) visibility. In the Ordinary Least-squares (OLS) positioning, each received satellite signal can be first determined with a certain azimuth angle AZk (k ∈ (1, 2, . . . , 360)), then if elevation angle given by the received satellite is lower than ELk, we may assume it is not LOS observation and filter out this bad-quality measurement. At one epoch, after this skymask-filtering, if the available number of satellites is smaller than 4, we abort the positioning for this epoch. The above work procedures can be summarized in the flowchart in 1. As for the urban dataset with 839 epochs in total, the 2D positioning results of OLS with skymask and without skymask are summarized in Figure 2. It can be shown that the positioning precision is significantly improved because bad-quality measurements (i.e., not LOS signals) are filtered out. Table 3 also compares the standard deviation(STD) and root-mean-square error (RMSE) between the two methods. It can be shown that the positioning accuracy is not necessarily improved with skymask because the filtering process might result in less number of satellite signals for positioning. Notably, the skymask excludes the satellites based on the elevation angle, which is highly related their height information. Therefore, the geometry in the vertical dimension will be partly destroyed, thus generating worse 3D positioning performance. Besides, GNSS solutions exist in all the 839 epochs for both methods, which indicates 100% solution availability. However, theoretically, the skymask filtering scheme may not have sufficient number of LOS-signal satellites for least-squares estimation. Therefore, the OLS with skymask may not have solution for all the epochs. 
+![image](https://github.com/user-attachments/assets/6fb9997c-ea01-4fbf-9a1a-a6e7df1ef439)
+![image](https://github.com/user-attachments/assets/d52f3119-9a81-4383-9e96-a2c7b49ea3f9)
+
+## Task 3
+The following discussion will be conducted based on the ”OpenSky” dataset, with 926 epochs in total. Throughout all the epochs, there are 9 received satellite signals. The RAIM scheme first considers detection, after which the isolation is conducted. If one single faulty measurement is detected, this specific measurement will be isolated and positioning will be conducted again.
+
+In ”A2.m”, set settings.sys.lstype = 1 to run WLS positioning. Line 154-189 in ”calcPosLSE.m” implements the weighted RAIM along WLS, supported with functions ”chi2_detector.m” and ”compute_PL.m”.
+
+Consider the estimated weighted position $X$ based on
+the WSSE test statistics is formulated as
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
