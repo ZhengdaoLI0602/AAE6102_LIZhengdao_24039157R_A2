@@ -13,11 +13,12 @@ GNSS techniques for smartphone navigation, including Differential GNSS (DGNSS), 
 4. PPP-RTK: Combines PPP’s global orbit/clock corrections with RTK-like regional atmospheric delay grids. Uses carrier-phase measurements and ambiguity resolution for faster convergence [4, 5].
 
 ### (II) Level of Accuracy
-![image](https://github.com/user-attachments/assets/1d168a64-1a33-4e84-9824-1b8c06967c45)
+![image](https://github.com/user-attachments/assets/bda77af8-df01-4ae6-98fd-e7aea99b671a)
+
 
 ### (III) Supported Coverage
 1. DGNSS: Local (50 km from base station).
-2. RTK: Regional (50 km from base/CORS network).
+2. RTK: Regional (10 km from base/CORS network).
 3. PPP: Global (relies on satellite-broadcast corrections).
 4. PPP-RTK: Regional (requires dense CORS network for atmospheric grids).
 
@@ -34,12 +35,13 @@ GNSS techniques for smartphone navigation, including Differential GNSS (DGNSS), 
 ### (VI) Limitations
 1. DGNSS: Accuracy limited by pseudorange noise and smartphone antenna quality; coverage restricted to base station proximity.
 2. RTK: Performance degrades with baseline length; carrier-phase noise and multipath degrade performance in urban areas
-3. PPP: Requires 20–40 minutes for decimeter-level accuracy.
+3. PPP: Requires 10–20 minutes for decimeter-level accuracy.
 4. PPP-RTK: Dependent on regional CORS density; smartphone antennas struggle with low carrier-phase SNR.
 
 Finally, Table 2 briefly summarizes the properties of the four GNSS techniques for smartphone navigation [1, 2, 3, 4, 5].
+![image](https://github.com/user-attachments/assets/9ea4d918-8eb2-42da-adff-219fb5ba12f0)
 
-![image](https://github.com/user-attachments/assets/b06d7106-88c0-46a0-aaef-84ff824b0786)
+
 
 
 ## Task 2
